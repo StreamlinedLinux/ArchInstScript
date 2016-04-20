@@ -6,7 +6,7 @@ if [ $UID != $ROOT_UID ]; then
     exit 1
 fi
 #This will install the K desktop environment with sufficient drivers.
-LIST_OF_APPS="xf86-video-fbdev plasma-meta chromium xorg-server xf86-video-intel	mesa-libgl	lib32-mesa-libgl ssdm lollypop"
+LIST_OF_APPS="xf86-video-fbdev plasma-meta chromium xorg-server xf86-video-intel	mesa-libgl	lib32-mesa-libgl sddm lollypop"
 sudo pacman -S $LIST_OF_APPS
 sudo pacman -R lollypop
 sudo systemctl enable sddm.service
